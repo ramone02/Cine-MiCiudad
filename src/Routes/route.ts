@@ -1,12 +1,6 @@
-import { Estrenos, Home } from "../Pages";
+import { Route } from "../Interfaces";
+import { Estrenos, Faqs, Home } from "../Pages";
 
-
-interface Route {
-    to: string;
-    path: string;
-    Component: React.ElementType;
-    name: string;
-};
 export const routes: Array<Route> = [
     {
         to: '/',
@@ -23,7 +17,7 @@ export const routes: Array<Route> = [
     {
         to: '/faqs',
         path: '/faqs',
-        Component: Estrenos,
-        name: `faq's`,
+        Component: Faqs,
+        name: `Faq's`,
     }
 ];
